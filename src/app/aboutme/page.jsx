@@ -1,3 +1,10 @@
+import {
+  faFacebook,
+  faInstagram,
+  faLine,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Container from "../components/container/Container";
 
@@ -31,16 +38,15 @@ function AboutME() {
           </div>
           <div className="flex">
             <div className="w-1/2">
-              <div>
-                I am a Professional UI/UX Designer and Web developer.
-                Consectetur an adipisi elita, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
-                nostrud.
+              <div className="text-xl font-bold">
+                I am a Professional Web developer. Consectetur an adipisi elita,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam quis nostrud.
               </div>
               <div className="py-4">
                 <hr />
               </div>
-              <div>
+              <div className="text-lg font-bold text-gray-400">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt
@@ -57,15 +63,25 @@ function AboutME() {
               <div className="flex justify-between">
                 <div>
                   <div>Phone </div>
-                  <div>123-456-7890</div>
+                  <div>+66 887 858 180</div>
                 </div>
                 <div>
                   <div>Email</div>
-                  <div>name@domain.com</div>
+                  <div>
+                    <a href="mailto:m.bunyoy@gmail.com">m.bunyoy@gmail.com</a>
+                  </div>
                 </div>
                 <div>
                   <div>Website</div>
-                  <div>www.domain.com</div>
+                  <div>
+                    <a
+                      href="http://www.thetaomc.xyz"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      www.thetaomc.xyz
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -81,10 +97,18 @@ function AboutME() {
                   />
                 </div>
                 <div className=" w-full py-4 flex justify-center items-center gap-4">
-                  <div>1</div>
-                  <div>1</div>
-                  <div>1</div>
-                  <div>1</div>
+                  <div className="h-5 w-5">
+                    <FontAwesomeIcon icon={faFacebook} size="2xs" />
+                  </div>
+                  <div className="h-5 w-5">
+                    <FontAwesomeIcon icon={faInstagram} size="2xs" />
+                  </div>
+                  <div className="h-5 w-5">
+                    <FontAwesomeIcon icon={faLinkedin} size="2xs" />
+                  </div>
+                  <div className="h-5 w-5">
+                    <FontAwesomeIcon icon={faLine} size="2xs" />
+                  </div>
                 </div>
               </div>
             </div>
