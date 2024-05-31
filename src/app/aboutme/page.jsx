@@ -26,7 +26,9 @@ function AboutME() {
       <div>
         <Container>
           <div className="text-center py-4 text-2xl font-bold">ABOUT ME</div>
-          <hr />
+          <div className="py-4">
+            <hr />
+          </div>
           <div className="flex">
             <div className="w-1/2">
               <div>
@@ -34,6 +36,9 @@ function AboutME() {
                 Consectetur an adipisi elita, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
                 nostrud.
+              </div>
+              <div className="py-4">
+                <hr />
               </div>
               <div>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -46,18 +51,41 @@ function AboutME() {
                 ipsam vo luptatem quia voluptas sit aspernatur aut odit aut
                 fugit,
               </div>
-              <hr />
+              <div className="py-4">
+                <hr />
+              </div>
               <div className="flex justify-between">
-                <div>Phone 123-456-7890</div>
-                <div>Email name@domain.com</div>
-                <div>Website www.domain.com</div>
+                <div>
+                  <div>Phone </div>
+                  <div>123-456-7890</div>
+                </div>
+                <div>
+                  <div>Email</div>
+                  <div>name@domain.com</div>
+                </div>
+                <div>
+                  <div>Website</div>
+                  <div>www.domain.com</div>
+                </div>
               </div>
             </div>
 
             <div className="w-1/2">
               <div className="flex flex-col">
-                <div className="bg-black w-full h-28"></div>
-                <div className="bg-black w-full h-28"></div>
+                <div className=" w-full flex justify-center">
+                  <img
+                    className="rounded-3xl"
+                    src="/bg.avif"
+                    alt=""
+                    width="50%"
+                  />
+                </div>
+                <div className=" w-full py-4 flex justify-center items-center gap-4">
+                  <div>1</div>
+                  <div>1</div>
+                  <div>1</div>
+                  <div>1</div>
+                </div>
               </div>
             </div>
           </div>
