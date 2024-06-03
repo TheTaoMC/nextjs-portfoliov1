@@ -11,7 +11,7 @@ import Container from "../components/container/Container";
 function AboutME() {
   return (
     <>
-      <div
+      <div id="top"
         style={{
           backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/bg.avif')",
@@ -32,7 +32,9 @@ function AboutME() {
 
       <div>
         <Container>
-          <div className="text-center py-4 text-2xl font-bold">ABOUT ME</div>
+          <div id="about-me" className="text-center py-4 text-2xl font-bold">
+            ABOUT ME
+          </div>
           <div className="py-4">
             <hr />
           </div>
