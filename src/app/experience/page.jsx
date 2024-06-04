@@ -6,7 +6,7 @@ function Experience() {
     <>
       <Container>
         <div
-          id="about-me"
+          id="EXPERIENCE"
           className="text-center py-4 mt-20 text-2xl font-bold uppercase"
         >
           Experience

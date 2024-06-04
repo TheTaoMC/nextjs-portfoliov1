@@ -6,7 +6,7 @@ function Education() {
     <>
       <Container>
         <div
-          id="about-me"
+          id="EDUCATION"
           className="text-center py-4 mt-20 text-2xl font-bold"
         >
           EDUCATION

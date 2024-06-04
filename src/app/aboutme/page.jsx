@@ -11,7 +11,8 @@ import Container from "../components/container/Container";
 function AboutME() {
   return (
     <>
-      <div id="top"
+      <div
+        id="top"
         style={{
           backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/bg.avif')",
@@ -22,7 +23,7 @@ function AboutME() {
         <div className="h-[100vh] flex flex-col justify-center items-center gap-4">
           <div className="text-3xl text-white">My Name is Manote Bunyoy.</div>
           <div className="text-xl text-white">Full-Stack Web Developer</div>
-          <div className="text-xl text-white  bg-lime-600 hover:bg-lime-700 px-2 py-1 rounded-md transition-all">
+          <div className="text-xl text-white  bg-blue-500 hover:bg-blue-700 px-2 py-1 rounded-md transition-all">
             <a href="/resume.pdf" download="My_Resume.pdf">
               Download Resume
             </a>
@@ -32,7 +33,7 @@ function AboutME() {
 
       <div>
         <Container>
-          <div id="about-me" className="text-center py-4 text-2xl font-bold">
+          <div id="ABOUT ME" className="text-center py-4 text-2xl font-bold">
             ABOUT ME
           </div>
           <div className="py-4">

@@ -1,7 +1,7 @@
 import React from "react";
 
-function Skills() {
+function ContactME() {
   return <div>page</div>;
 }
 
-export default Skills;
+export default ContactME;

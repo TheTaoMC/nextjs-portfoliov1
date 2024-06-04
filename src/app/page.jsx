@@ -1,27 +1,42 @@
 "use client";
+import { Kanit } from "next/font/google";
+
+const kanit_init = Kanit({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-kanit",
+});
 import Image from "next/image";
 import React from "react";
-import { Button } from "primereact/button";
 import Navber from "./components/navbar/Navber";
 import AboutME from "./aboutme/page";
 import Education from "./education/page";
 
-import { FloatButton } from "antd";
+import { FloatButton, ConfigProvider } from "antd";
 
 import { animateScroll as scroll } from "react-scroll";
 import Experience from "./experience/page";
 import Project from "./project/page";
+import Stack from "./stack/page";
 
 export default function Home() {
   return (
     <>
-      <Navber />
-      <AboutME />
-      <Education />
-      <Experience />
-      <Project />
-      <a onClick={() => scroll.scrollTo(100)}>go to top</a>
-      <FloatButton.BackTop />
+      <ConfigProvider
+        theme={{
+          token: {
+            fontFamily: kanit_init.style.fontFamily,
+          },
+        }}
+      >
+        <Navber />
+        <AboutME />
+        <Education />
+        <Experience />
+        <Project />
+        <Stack />
+        <FloatButton.BackTop />
+      </ConfigProvider>
     </>
   );
 }
