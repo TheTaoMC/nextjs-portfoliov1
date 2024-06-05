@@ -1,8 +1,8 @@
+"use client";
 import React from "react";
 import Container from "../components/container/Container";
 import { Card } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 function Stack() {
   return (

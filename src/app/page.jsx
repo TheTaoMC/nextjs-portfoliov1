@@ -18,6 +18,7 @@ import { animateScroll as scroll } from "react-scroll";
 import Experience from "./experience/page";
 import Project from "./project/page";
 import Stack from "./stack/page";
+import ContactME from "./contactme/page";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         <Experience />
         <Project />
         <Stack />
+        <ContactME />
         <FloatButton.BackTop />
       </ConfigProvider>
     </>

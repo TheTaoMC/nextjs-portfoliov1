@@ -1,3 +1,4 @@
+"use client";
 import {
   faFacebook,
   faInstagram,
@@ -100,17 +101,17 @@ function AboutME() {
                   />
                 </div>
                 <div className=" w-full py-4 flex justify-center items-center gap-4">
-                  <div className="h-5 w-5">
-                    <FontAwesomeIcon icon={faFacebook} size="2xs" />
+                  <div className="h-5 w-5 text-center">
+                    <FontAwesomeIcon icon={faFacebook} />
                   </div>
-                  <div className="h-5 w-5">
-                    <FontAwesomeIcon icon={faInstagram} size="2xs" />
+                  <div className="h-5 w-5 text-center">
+                    <FontAwesomeIcon icon={faInstagram} />
                   </div>
-                  <div className="h-5 w-5">
-                    <FontAwesomeIcon icon={faLinkedin} size="2xs" />
+                  <div className="h-5 w-5 text-center">
+                    <FontAwesomeIcon icon={faLinkedin} />
                   </div>
-                  <div className="h-5 w-5">
-                    <FontAwesomeIcon icon={faLine} size="2xs" />
+                  <div className="h-5 w-5 text-center">
+                    <FontAwesomeIcon icon={faLine} />
                   </div>
                 </div>
               </div>
