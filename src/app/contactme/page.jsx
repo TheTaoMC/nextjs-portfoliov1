@@ -32,8 +32,24 @@ function ContactME() {
   };
   /* eslint-enable no-template-curly-in-string */
 
-  const onFinish = (values) => {
-    console.log(values);
+  const onFinish = async (values) => {
+    console.log(values.data);
+
+    try {
+      const response = await fetch("https://api.thetaomc.xyz/api/contacts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values.data),
+        mode: "cors",
+      });
+
+      const data = await response.json();
+      console.log("Success:", data);
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   return (
@@ -81,12 +97,15 @@ function ContactME() {
               >
                 <Input placeholder="Email" />
               </Form.Item>
-              <Form.Item name={["data", "suject"]}>
-                <Input placeholder="Suject" />
+
+              <Form.Item name={["data", "subject"]}>
+                <Input placeholder="Subject" />
               </Form.Item>
+              
               <Form.Item name={["data", "message"]}>
                 <Input.TextArea placeholder="Message" />
               </Form.Item>
+              
               <Form.Item
                 wrapperCol={{
                   ...layout.wrapperCol,
