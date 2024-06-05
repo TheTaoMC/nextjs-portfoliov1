@@ -10,6 +10,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 function ContactME() {
+  const [form] = Form.useForm();
   const layout = {
     labelCol: {
       span: 8,
@@ -47,6 +48,7 @@ function ContactME() {
 
       const data = await response.json();
       console.log("Success:", data);
+      form.resetFields();
     } catch (error) {
       console.error("Error:", error);
     }
@@ -68,6 +70,7 @@ function ContactME() {
           <div className="">
             <Form
               {...layout}
+              form={form}
               name="nest-messages"
               onFinish={onFinish}
               style={{
@@ -101,11 +104,11 @@ function ContactME() {
               <Form.Item name={["data", "subject"]}>
                 <Input placeholder="Subject" />
               </Form.Item>
-              
+
               <Form.Item name={["data", "message"]}>
                 <Input.TextArea placeholder="Message" />
               </Form.Item>
-              
+
               <Form.Item
                 wrapperCol={{
                   ...layout.wrapperCol,
