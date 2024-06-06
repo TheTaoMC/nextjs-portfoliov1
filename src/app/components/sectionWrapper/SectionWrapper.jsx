@@ -11,7 +11,8 @@ const SectionWrapper = ({ children }) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add(styles["fade-in-visible"]);
-            observer.unobserve(entry.target);
+          } else {
+            entry.target.classList.remove(styles["fade-in-visible"]);
           }
         });
       },
