@@ -66,17 +66,18 @@ function ContactME() {
         <div className="py-2 mb-4">
           <hr className="border-gray-700 w-2/3 mx-auto" />
         </div>
-        <div className="flex justify-center bg-gray-200 rounded-lg p-4">
+        <div className="sm:flex  justify-center bg-gray-200 rounded-lg p-4">
           <div className="">
             <Form
               {...layout}
               form={form}
               name="nest-messages"
               onFinish={onFinish}
-              style={{
-                maxWidth: 400,
+              className="sm:w-[400px] w-full"
+              /*               style={{
+                maxWidth: 300,
                 width: 400,
-              }}
+              }} */
               validateMessages={validateMessages}
             >
               <Form.Item

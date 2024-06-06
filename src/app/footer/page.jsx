@@ -4,7 +4,9 @@ function Footer() {
   return (
     <>
       <div className="m-5 flex justify-center items-center">
-        <div>© Copyright. Design And Developed By TheTaoMC</div>
+        <div className="text-center">
+          © Copyright. Design And Developed By TheTaoMC
+        </div>
       </div>
     </>
   );
