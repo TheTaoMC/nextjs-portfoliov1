@@ -21,6 +21,7 @@ import Stack from "./stack/page";
 import ContactME from "./contactme/page";
 import Preloader from "./components/preloader/Preloader";
 import SectionWrapper from "./components/sectionWrapper/SectionWrapper";
+import Footer from "./footer/page";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -43,8 +44,9 @@ export default function Home() {
         }}
       >
         <Navber />
-
-        <AboutME />
+        <SectionWrapper>
+          <AboutME />
+        </SectionWrapper>
         <SectionWrapper>
           <Education />
         </SectionWrapper>
@@ -59,6 +61,9 @@ export default function Home() {
         </SectionWrapper>
         <SectionWrapper>
           <ContactME />
+        </SectionWrapper>
+        <SectionWrapper>
+          <Footer />
         </SectionWrapper>
         <FloatButton.BackTop />
       </ConfigProvider>

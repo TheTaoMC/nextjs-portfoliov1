@@ -10,43 +10,59 @@ function Stack() {
       <Container>
         <div
           id="STACK"
-          className="text-center py-4 mt-20 text-2xl font-bold uppercase"
+          className="text-center py-8 mt-20 text-4xl font-bold tracking-wider text-gray-700 uppercase"
         >
           Stack
         </div>
-        <div className="py-4">
-          <hr />
+        <div className="py-2 mb-4">
+          <hr className="border-gray-700 w-2/3 mx-auto" />
         </div>
-        <div className="flex gap-4 justify-center items-center flex-wrap">
+        <div className="flex gap-6 justify-center items-center flex-wrap  p-4">
           <Card
-            title={<span className="text-xl font-bold">Front End</span>}
+            title={
+              <span className="text-xl font-bold text-gray-200 cursor-pointer">
+                Front End
+              </span>
+            }
             bordered={false}
             style={{ width: 250, height: 180 }}
-            className="bg-blue-200 hover:bg-blue-300 hover:scale-105 hover:z-50 transition-all duration-500 "
+            className="bg-gray-800 hover:bg-gray-900 hover:scale-105 hover:z-50 transition-all duration-500 "
           >
-            <p>ReactJS - NextJS</p>
-            <p>Tailwind CSS</p>
-            <p>PrimeReact - UI components</p>
-            <p>Ant Design - UI components</p>
+            <p className="font-semibold text-gray-400">ReactJS - NextJS</p>
+            <p className="font-semibold text-gray-400">Tailwind CSS</p>
+            <p className="font-semibold text-gray-400">
+              PrimeReact - UI components
+            </p>
+            <p className="font-semibold text-gray-400">
+              Ant Design - UI components
+            </p>
           </Card>
           <Card
-            title={<span className="text-xl font-bold ">Back End</span>}
+            title={
+              <span className="text-xl font-bold text-gray-200 cursor-pointer">
+                Back End
+              </span>
+            }
             bordered={false}
             style={{ width: 250, height: 180 }}
-            className="bg-blue-200 hover:bg-blue-300 hover:scale-105 hover:z-50 transition-all duration-500 "
+            className="bg-gray-800 hover:bg-gray-900 hover:scale-105 hover:z-50 transition-all duration-500 "
           >
-            <p>Express - Node.js</p>
-            <p>SqlServer</p>
-            <p>MySql</p>
+            <p className="font-semibold text-gray-400">Express - Node.js</p>
+            <p className="font-semibold text-gray-400">SqlServer</p>
+            <p className="font-semibold text-gray-400">MySql</p>
           </Card>
 
           <Card
-            title={<span className="text-xl font-bold">Version Control</span>}
+            title={
+              <span className="text-xl font-bold text-gray-200 cursor-pointer">
+                Version Control
+              </span>
+            }
             bordered={false}
             style={{ width: 250, height: 180 }}
-            className="bg-blue-200 hover:bg-blue-300 hover:scale-105 hover:z-50 transition-all duration-500 "
+            className="bg-gray-800 hover:bg-gray-900 hover:scale-105 hover:z-50 transition-all duration-500 "
           >
-            <p>
+            <p className="font-semibold text-gray-400">
               Github{" "}
               <a
                 href="https://github.com/TheTaoMC"

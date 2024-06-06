@@ -59,14 +59,14 @@ function ContactME() {
       <Container>
         <div
           id="CONTACT ME"
-          className="text-center py-4 mt-20 text-2xl font-bold"
+          className="text-center py-8 mt-20 text-4xl font-bold tracking-wider text-gray-700 uppercase"
         >
           CONTACT ME
         </div>
-        <div className="py-4">
-          <hr />
+        <div className="py-2 mb-4">
+          <hr className="border-gray-700 w-2/3 mx-auto" />
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center bg-gray-200 rounded-lg p-4">
           <div className="">
             <Form
               {...layout}

@@ -18,32 +18,40 @@ function Project() {
       <Container>
         <div
           id="PROJECT"
-          className="text-center py-4 mt-20 text-2xl font-bold uppercase"
+          className="text-center py-8 mt-20 text-4xl font-bold tracking-wider text-gray-700 uppercase"
         >
           Project
         </div>
-        <div className="py-4 scale-105">
-          <hr />
+        <div className="py-2 mb-4">
+          <hr className="border-gray-700 w-2/3 mx-auto" />
         </div>
-        <div className="flex gap-4 justify-center items-center flex-wrap">
+        <div className="flex gap-6 justify-center items-center flex-wrap  p-4">
           <Card
             title={
               <span
-                className="text-xl font-bold cursor-pointer"
+                className="text-xl font-bold text-gray-200 cursor-pointer"
                 onClick={() => setOpen(true)}
               >
                 WebReportData{" "}
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} bounce />
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                  bounce
+                  className="text-gray-400"
+                />
               </span>
             }
             bordered={false}
             style={{ width: 250, height: 180 }}
-            className="bg-blue-200 hover:bg-blue-300 hover:scale-105 hover:z-50 transition-all duration-500 "
+            className="bg-gray-800 hover:bg-gray-900 hover:scale-105 hover:z-50 transition-all duration-500 "
           >
             <div>
-              <div className="font-semibold">STACK</div>
-              <div>Front End : React,Tailwind CSS,PrimeReact</div>
-              <div>Back End : 3rd Party(PHP,MySql)</div>
+              <div className="font-semibold text-gray-400">STACK</div>
+              <div className="text-gray-300">
+                Front End : React,Tailwind CSS,PrimeReact
+              </div>
+              <div className="text-gray-300">
+                Back End : 3rd Party(PHP,MySql)
+              </div>
             </div>
           </Card>
         </div>

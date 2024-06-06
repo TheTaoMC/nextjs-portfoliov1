@@ -34,11 +34,14 @@ function AboutME() {
 
       <div>
         <Container>
-          <div id="ABOUT ME" className="text-center py-4 text-2xl font-bold">
+          <div
+            id="ABOUT ME"
+            className="text-center py-8 mt-20 text-4xl font-bold tracking-wider text-gray-700 uppercase"
+          >
             ABOUT ME
           </div>
-          <div className="py-4">
-            <hr />
+          <div className="py-2 mb-10">
+            <hr className="border-gray-700 w-2/3 mx-auto" />
           </div>
           <div className="flex">
             <div className="w-1/2">
