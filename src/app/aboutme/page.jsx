@@ -25,7 +25,7 @@ function AboutME() {
           <div className="text-3xl text-white">My Name is Manote Bunyoy.</div>
           <div className="text-xl text-white">Full-Stack Web Developer</div>
           <div className="text-xl text-white  bg-blue-500 hover:bg-blue-700 px-2 py-1 rounded-md transition-all">
-            <a href="/resume.pdf" download="My_Resume.pdf">
+            <a href="/Resume.pdf" download="Resume.pdf">
               Download Resume
             </a>
           </div>
@@ -46,24 +46,37 @@ function AboutME() {
           <div className="flex">
             <div className="w-1/2">
               <div className="text-xl font-bold">
-                I am a Professional Web developer. Consectetur an adipisi elita,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam quis nostrud.
+                Hello! My name is Manoch Bunyoy, and I am a passionate
+                Full-Stack Web Developer. Although I am relatively new to the
+                field, having started my journey only a short while ago, I am
+                eager to learn and grow.
               </div>
               <div className="py-4">
                 <hr />
               </div>
               <div className="text-lg font-bold text-gray-400">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum. Sed ut perspi unde omnis iste natus
-                error sit voluptatem accusantium doloremque lauda ntium, totam
-                rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-                quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                ipsam vo luptatem quia voluptas sit aspernatur aut odit aut
-                fugit,
+                During this time, I have focused on developing my skills in both
+                front-end and back-end technologies. I have successfully created
+                my first front-end website, which has been a rewarding
+                experience and has fueled my enthusiasm for web development.
+                <br />
+                <br />
+                In my free time, I enjoy programming, exploring new
+                technologies, and playing video games. My love for computers and
+                coding drives me to continuously improve and expand my
+                knowledge.
+                <br />
+                <br />
+                My ultimate goal is to become a proficient Full-Stack Web
+                Developer who understands the intricacies of both front-end and
+                back-end development. I am excited about the opportunities ahead
+                and look forward to contributing to impactful projects.
+                <br />
+                <br />
+                Feel free to reach out to me via email or connect with me on
+                social media.
               </div>
+
               <div className="py-4">
                 <hr />
               </div>
@@ -105,16 +118,31 @@ function AboutME() {
                 </div>
                 <div className=" w-full py-4 flex justify-center items-center gap-4">
                   <div className="h-5 w-5 text-center">
-                    <FontAwesomeIcon icon={faFacebook} />
+                    <a
+                      href="https://www.facebook.com/TheTaoMC"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faFacebook} />
+                    </a>
                   </div>
                   <div className="h-5 w-5 text-center">
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <a
+                      href="https://www.instagram.com/thetaomc.apk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </a>
                   </div>
                   <div className="h-5 w-5 text-center">
-                    <FontAwesomeIcon icon={faLinkedin} />
-                  </div>
-                  <div className="h-5 w-5 text-center">
-                    <FontAwesomeIcon icon={faLine} />
+                    <a
+                      href="https://line.me/ti/p/8WOTj8NNiW"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faLine} />
+                    </a>
                   </div>
                 </div>
               </div>

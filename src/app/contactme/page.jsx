@@ -143,18 +143,33 @@ function ContactME() {
               </a>
             </div>
             <div>
-              <div className=" w-full py-4 flex justify-start items-center gap-4">
+              <div className=" w-full py-4 flex justify-center items-center gap-4">
                 <div className="h-5 w-5 text-center">
-                  <FontAwesomeIcon icon={faFacebook} />
+                  <a
+                    href="https://www.facebook.com/TheTaoMC"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faFacebook} />
+                  </a>
                 </div>
                 <div className="h-5 w-5 text-center">
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <a
+                    href="https://www.instagram.com/thetaomc.apk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
                 </div>
                 <div className="h-5 w-5 text-center">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </div>
-                <div className="h-5 w-5 text-center">
-                  <FontAwesomeIcon icon={faLine} />
+                  <a
+                    href="https://line.me/ti/p/8WOTj8NNiW"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faLine} />
+                  </a>
                 </div>
               </div>
             </div>
