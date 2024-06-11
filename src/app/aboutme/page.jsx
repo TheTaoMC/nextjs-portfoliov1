@@ -9,6 +9,7 @@ import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import Container from "../components/container/Container";
+import HeaderTitle from "../components/headertitle/HeaderTitle";
 
 function AboutME() {
   const [isReadMoreOpen, setIsReadMoreOpen] = useState(false);
@@ -38,7 +39,7 @@ function AboutME() {
 
       <div>
         <Container>
-          <div
+          {/*           <div
             id="ABOUT ME"
             className="text-center py-8 mt-20 text-4xl font-bold tracking-wider text-gray-700 uppercase"
           >
@@ -46,7 +47,10 @@ function AboutME() {
           </div>
           <div className="py-2 mb-10">
             <hr className="border-gray-700 w-2/3 mx-auto" />
-          </div>
+          </div> */}
+
+          <HeaderTitle id={"ABOUT ME"} title={"ABOUT ME"} />
+
           <div className="sm:flex-row flex flex-col-reverse justify-center items-center">
             <div className="w-1/2">
               <div className="text-xl font-bold">

@@ -1,11 +1,12 @@
 import React from "react";
 import Container from "../components/container/Container";
 import { Radio, Timeline } from "antd";
+import HeaderTitle from "../components/headertitle/HeaderTitle";
 function Experience() {
   return (
     <>
       <Container>
-        <div
+{/*         <div
           id="EXPERIENCE"
           className="text-center py-8 mt-20 text-4xl font-bold tracking-wider text-gray-700 uppercase"
         >
@@ -13,7 +14,9 @@ function Experience() {
         </div>
         <div className="py-2 mb-10">
           <hr className="border-gray-700 w-2/3 mx-auto" />
-        </div>
+        </div> */}
+
+        <HeaderTitle id={"EXPERIENCE"} title={"EXPERIENCE"} />
         <div>
           <Timeline
             mode={"left"}

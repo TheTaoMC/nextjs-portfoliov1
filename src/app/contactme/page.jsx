@@ -9,6 +9,7 @@ import {
   faLine,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import HeaderTitle from "../components/headertitle/HeaderTitle";
 function ContactME() {
   const [form] = Form.useForm();
   const layout = {
@@ -57,7 +58,7 @@ function ContactME() {
   return (
     <>
       <Container>
-        <div
+        {/*         <div
           id="CONTACT ME"
           className="text-center py-8 mt-20 text-4xl font-bold tracking-wider text-gray-700 uppercase"
         >
@@ -65,7 +66,8 @@ function ContactME() {
         </div>
         <div className="py-2 mb-4">
           <hr className="border-gray-700 w-2/3 mx-auto" />
-        </div>
+        </div> */}
+        <HeaderTitle id={"CONTACT ME"} title={"CONTACT ME"} />
         <div className="sm:flex  justify-center bg-gray-200 rounded-lg p-4">
           <div className="">
             <Form

@@ -4,10 +4,11 @@ import Container from "../components/container/Container";
 import { Card } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import HeaderTitle from "../components/headertitle/HeaderTitle";
 function Stack() {
   return (
     <>
-      <Container>
+      <Container>{/* 
         <div
           id="STACK"
           className="text-center py-8 mt-20 text-4xl font-bold tracking-wider text-gray-700 uppercase"
@@ -16,7 +17,8 @@ function Stack() {
         </div>
         <div className="py-2 mb-4">
           <hr className="border-gray-700 w-2/3 mx-auto" />
-        </div>
+        </div> */}
+        <HeaderTitle id={"STACK"} title={"STACK"} />
         <div className="flex gap-6 justify-center items-center flex-wrap  p-4">
           <Card
             title={

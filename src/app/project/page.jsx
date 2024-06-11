@@ -7,6 +7,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 import "./css.css"; // นำเข้าไฟล์ CSS
 import UIModal from "./ui/UIModal";
+import HeaderTitle from "../components/headertitle/HeaderTitle";
 function Project() {
   const [open, setOpen] = useState(false);
 
@@ -16,15 +17,7 @@ function Project() {
       <UIModal open={open} setOpen={setOpen} />
 
       <Container>
-        <div
-          id="PROJECT"
-          className="text-center py-8 mt-20 text-4xl font-bold tracking-wider text-gray-700 uppercase"
-        >
-          Project
-        </div>
-        <div className="py-2 mb-4">
-          <hr className="border-gray-700 w-2/3 mx-auto" />
-        </div>
+        <HeaderTitle id={"PROJECT"} title={"PROJECT"} />
         <div className="flex gap-6 justify-center items-center flex-wrap  p-4">
           <Card
             title={
